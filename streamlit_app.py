@@ -178,3 +178,4 @@ if st.button("📄 Export Finalized PDF Report"):
     pdf_path = generate_centered_pdf(df, working_days, sorted_months, fig, all_gauges, avg_day_gauges, total_target_gauges)
     with open(pdf_path, "rb") as f:
         st.download_button("📥 Download PDF", f, file_name="fsc_performance_report.pdf", mime="application/pdf")
+
